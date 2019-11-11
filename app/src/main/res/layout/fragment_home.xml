@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.fragment.home.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_d_bold"
+        android:padding="@dimen/dp_8"
+        android:text="@string/feature_album"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Banner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_d_bold"
+        android:padding="@dimen/dp_8"
+        android:text="@string/top_chart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_TopChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
